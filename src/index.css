@@ -1,13 +1,97 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Croissant+One&family=Dosis:wght@200&family=Mate+SC&family=Raleway:wght@200;300;500&family=Roboto+Condensed:wght@100;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bitter', sans-serif; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* 
+font-family: 'Bitter', serif;
+font-family: 'Croissant One', serif;
+font-family: 'Dosis', sans-serif;
+font-family: 'Mate SC', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; 
+*/
+
+.whole_body{
+  width: 100vw;
+  height: 100vh;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.mainheading{
+  padding-bottom: 30px;
+  color: grey;
+}
+
+span{
+  font-weight: 400;
+}
+
+.tablecontainer{
+  width: 90%;
+  height: 90%;
+  overflow: auto;
+  top:40px;
+  justify-content: center;
+
+}
+
+table{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tableh tr{
+  display: flex;
+  
+  padding-top: 10px;
+  padding-bottom: 15px;
+  
+  background-color: rgba(0, 0, 0,0.6);
+  text-align: left;
+
+}
+
+.tableh tr{
+  /* background-color: black; */
+  color: wheat;
+  justify-content: stretch;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  column-gap: auto;
+}
+
+.tableb tr{
+  background-color: rgb(220, 218, 218);
+  color: black;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: auto;
+}
+
+.tableb td{
+  text-align: left;
+  padding: 9px;
+  transition:ease-out,500ms;
+}
+.tableb td:hover {
+  background-color: greenyellow;
+}
+tr .death:hover {
+    background-color: rgb(238, 137, 137);
 }
